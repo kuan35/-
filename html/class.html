@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表單測試</title>
+    <a href="audio1.html">前往基礎作業第七頁</a>
+</head>
+<body>
+    <h2 style="color: crimson; text-align: center">表單測試</h2>
+    <hr>
+    <form action="index.html" method="get">
+    <h2 style="color: coral;">請輸入資訊</h2>
+    <p>姓名:<input type="text" name="username" size="15" placeholder="請輸入中文姓名" autofocus></p>
+    <p>郵件:<input type="email" name="e_mail" size="15" placeholder="abc@aaa.com" autofocus></p>
+    <p>電話:<input type="tel" name="tel" size="15" placeholder="0910123456" autofocus></p>
+    <p>密碼:<input type="password" name="pwd" required autofocus></p>
+    <p>
+        性別：
+        <input type="radio" name="sex" value="1" checked>男性
+        <input type="radio" name="sex" value="0">女性</p>
+    <p>
+        自我滿意度(1~10):<input type="range" name="grade" min="1" max="10">
+    </p>
+    <p>
+        專長：<br>
+        <input type="checkbox" name="master" value="english">英文<br>
+        <input type="checkbox" name="master" value="japan">日文<br>
+        <input type="checkbox" name="master" value="computer">電腦<br>
+        <input type="checkbox" name="master" value="math">數學<br>
+    </p>
+    <p>
+        身高(公分):<input type="number" name="height" min="1" max="300">
+    </p>  
+    <p>
+        你喜歡的顏色：<input type="color" name="color">
+
+    </p>  
+    <hr>
+    <input style="color: blue;" type="submit" value="傳送資料">&emsp;
+    <input style="color: red;" type="reset" value="取消輸入">
+    <hr>
+    <form action="" method="get"></form>
+        <p><input type="search" name="searching" autofocus placeholder="請輸入關鍵字"></p>
+</body>
+</html>

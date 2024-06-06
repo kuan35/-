@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <title>audio相關標籤練習(2)</title>
+    <meta http-equiv="refresh" content="30">
+    <a href="inline_CSS.html">前往基礎作業第九頁</a>
+
+</head>
+<body>
+<h2>下拉式選單切換不同音樂</h2>
+<select id="songSelector">
+    <option value="demo1.mp3">音樂1</option>
+    <option value="demo2.mp3">音樂2</option>
+    <option value="demo3.mp3">音樂3</option>
+
+</select><br><br>
+
+<audio id ="audioPlayer" controls>
+    <source id="audioSource" src="demo1.mp3" type="audio/mp3">
+
+</audio>
+<script>
+    document.addEventListener('DOMContentLoaded',function() {
+        var songSelector =document.getElementById("songSelector");
+        var audioPlayer =document.getElementById("audioPlayer");
+        var audioSource =document.getElementById("audioSource");
+
+        songSelector.addEventListener("change",function(){
+            var selectedSong =songSelector.value;
+            audioSource.src=selectedSong;
+            audioPlayer.load();
+            audioPlayer.play();
+        });
+
+    })
+</script>
+
+
+
+    
+    
+</body>
+</html>

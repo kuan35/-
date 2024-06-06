@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <title>javascript動態互動式網頁</title>
+    <a href="js2.html">前往基礎作業第十二頁</a>
+    </head>
+<body>
+<h2>javascript動態互動式網頁</h1>
+<p id="demo">此段落可被js改變</p>
+<button type="button" onclick='document.getElementById("demo")
+.innerHTML="Hello javascript!"'>點擊觀看變化</button>
+<button type="button" onclick='document.getElementById("demo")
+.innerHTML="此段落可被js改變"'>還原</button><br><br><br>
+<button onclick="document.getElementById('myImage')
+.src='pic_bulbon.gif'">開燈</button>
+<button onclick="document.getElementById('myImage')
+.src='pic_bulboff.gif'">關燈</button>
+<br><br><img id="myImage" src="pic_bulboff.gif">
+<br><br><p id="demo2">此段落CSS可被js改變</p>
+<button type="button" onclick="document.getElementById('demo2')
+.style.fontSize='30px'">點擊觀看變化</button>
+<button type="button" onclick="document.getElementById('demo2')
+.style.display='none'">點擊隱藏</button>
+<button type="button" onclick="document.getElementById('demo2')
+.style.display='block'">點擊顯示</button>
+</body>
+</html>
